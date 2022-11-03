@@ -458,7 +458,7 @@ class Config(object, metaclass=NewInitCaller):
         errors = schema_v3.validate(self.config)
         if errors:
             msg = f"Failed to validate {self.molecule_file}\n\n{errors}"
-            util.sysexit_with_message(msg)
+            # util.sysexit_with_message(msg)
 
 
 def molecule_directory(path: str) -> str:
